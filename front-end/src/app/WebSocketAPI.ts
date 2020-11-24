@@ -3,7 +3,7 @@ import * as SockJS from 'sockjs-client';
 import { AppComponent } from './app.component';
 
 export class WebSocketAPI {
-    webSocketEndPoint: string = 'http://localhost:8080/ws';
+    webSocketEndPoint: string = 'http://localhost:8080/register';
     topic: string = "/topic/greetings";
     stompClient: any;
     appComponent: AppComponent;
@@ -40,7 +40,7 @@ export class WebSocketAPI {
 
 	/**
 	 * Send message to sever via web socket
-	 * @param {*} message 
+	 * @param {*} message
 	 */
     _send(message) {
         console.log("calling logout api via web socket");
